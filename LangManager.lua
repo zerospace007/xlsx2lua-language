@@ -2,47 +2,51 @@
 -- Don't change it manaully.
 -- Author: chuxiang9007@163.com  NormanYang
 -- Source file: LangManager.xlsx
--- Created at: Tue Dec 22 07:15:29 2015
+-- Created at: Tue Feb 23 02:15:53 2016
 
 
 LangManager = {}
 local this = LangManager
 
-this["TxtTitle1001"] = "创建磁卡是不可借此撒"
-this["TxtTitle1005"] = "创建磁卡是不可借此撒"
-this["TxtTitle1007"] = "创建磁卡是不可借此撒"
-this["TxtTitle1003"] = "创建磁卡是不可借此撒"
-this["TxtTitle1006"] = "创建磁卡是不可借此撒"
-this["TxtTitle1002"] = "创建磁卡是不可借此撒"
-this["TxtTitle1004"] = "创建磁卡是不可借此撒"
-this["TxtTitle1000"] = "创建磁卡是不可借此撒  Start"
-this["TxtTitle1008"] = "创建磁卡是不可借此撒  End"
-this["TxtUI1013"] = "是什么东东"
-this["TxtUI1003"] = "是什么东东"
-this["TxtUI1011"] = "是什么东东"
-this["TxtUI1006"] = "是什么东东"
-this["TxtUI1008"] = "是什么东东"
-this["TxtUI1009"] = "是什么东东"
-this["TxtUI1000"] = "是什么东东 Start"
-this["TxtUI1005"] = "是什么东东"
-this["TxtUI1015"] = "是什么东东"
-this["TxtUI1004"] = "是什么东东"
-this["TxtUI1007"] = "是什么东东"
-this["TxtUI1016"] = "是什么东东 End"
-this["TxtUI1014"] = "是什么东东"
-this["TxtUI1012"] = "是什么东东"
-this["TxtUI1010"] = "是什么东东 Start"
-this["TxtUI1002"] = "是什么东东"
-this["TxtUI1001"] = "是什么东东"
-this["TxtStory1005"] = "二十年都是梦啊 "
-this["TxtStory1004"] = "二十年都是梦啊 "
-this["TxtStory1001"] = "二十年都是梦啊 "
+this["TxtStory1002"] = "二十年都是梦啊 "
 this["TxtStory1003"] = "二十年都是梦啊 "
 this["TxtStory1000"] = "二十年%s都是%d梦啊 Start"
-this["TxtStory1002"] = "二十年都是梦啊 "
-this["TxtStory1007"] = "二十年都是梦啊 End"
 this["TxtStory1006"] = "二十年都是梦啊 "
+this["TxtStory1005"] = "二十年都是梦啊 "
+this["TxtStory1007"] = "二十年都是梦啊 End"
+this["TxtStory1004"] = "二十年都是梦啊 "
+this["TxtStory1001"] = "二十年都是梦啊 "
+this["TxtUI1004"] = "是什么东东"
+this["TxtUI1005"] = "是什么东东"
+this["TxtUI1006"] = "是什么东东"
+this["TxtUI1016"] = "是什么东东 End"
+this["TxtUI1002"] = "是什么东东"
+this["TxtUI1014"] = "是什么东东"
+this["TxtUI1000"] = "是什么东东 Start"
+this["TxtUI1011"] = "是什么东东"
+this["TxtUI1003"] = "是什么东东"
+this["TxtUI1001"] = "是什么东东"
+this["TxtUI1007"] = "是什么东东"
+this["TxtUI1015"] = "是什么东东"
+this["TxtUI1009"] = "是什么东东"
+this["TxtUI1012"] = "是什么东东"
+this["TxtUI1010"] = "是什么东东 Start"
+this["TxtUI1008"] = "是什么东东"
+this["TxtUI1013"] = "是什么东东"
+this["TxtTitle1005"] = "创建磁卡是不可借此撒"
+this["TxtTitle1001"] = "创建磁卡是不可借此撒"
+this["TxtTitle1006"] = "创建磁卡是不可借此撒"
+this["TxtTitle1007"] = "创建磁卡是不可借此撒"
+this["TxtTitle1003"] = "创建磁卡是不可借此撒"
+this["TxtTitle1008"] = "创建磁卡是不可借此撒  End"
+this["TxtTitle1000"] = "创建磁卡是不可借此撒  Start"
+this["TxtTitle1004"] = "创建磁卡是不可借此撒"
+this["TxtTitle1002"] = "创建磁卡是不可借此撒"
 
 function LangManager.GetText(key, ...)
 	return string.format(this[key], ...);
+end
+
+function LangManager.GetTempText(key, ...)
+	return string.format(key, ...);
 end

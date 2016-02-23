@@ -86,6 +86,7 @@ def write_to_lua_script(excel, output_path):
 			outfp.write("\"" + str(get_string(row[1])) + "\"\n")
 
 	outfp.write("\nfunction LangManager.GetText(key, ...)\n\treturn string.format(this[key], ...);\nend\n")
+	outfp.write("\nfunction LangManager.GetTempText(key, ...)\n\treturn string.format(key, ...);\nend\n")
 	outfp.close()
 
 def handler_file(excel_name, output_path):
