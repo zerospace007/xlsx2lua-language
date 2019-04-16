@@ -2,10 +2,10 @@ echo off
 
 :Start
 
-python xlsx2lua-language.py
+python xls2lua.py
 
 echo ===================================
-echo xlsx2lua-language Execute Success
+echo xls2lua Execute Success
 echo ===================================
 
 :Exit
